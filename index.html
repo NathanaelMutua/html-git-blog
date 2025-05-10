@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/icons/tutoring-logo.png">
-    <title>Git & GitHub Basics</title>
+    <title>Git Basics 101</title>
 </head>
 <body>
     <h1>Git Tutorial Blog</h1>
+    <em>By Nash</em>
     <a href="https://git-scm.com/">
         <img src="./assets/icons/git-logo.png" alt="Git-Logo" width="150px">
     </a>
@@ -24,13 +25,13 @@
     <p>This is signified through versioning numbers, such as: v2.2.1</p>
     <strong>Meaning of each digit</strong>
     <ul>
-        <li>"<b>2.</b>.2.1": This is a MAJOR change in a version</li>
-        <li>"2.<b>2</b>.1": This usually represents a patch release, usually having minor features.</li>
-        <li>"2.2.<b>1</b>": This represents a patch release, it is usually just basic bug fixes</li>
+        <li>"v<b>2.</b>.2.1": This is a MAJOR change in a version</li>
+        <li>"v2.<b>2</b>.1": This usually represents a patch release, usually having minor features.</li>
+        <li>"v2.2.<b>1</b>": This represents a patch release, it is usually just basic bug fixes</li>
     </ul>
 
     <h3>History</h3>
-    <p>Git was created by Linus Torvald, the creator of the Linux Kernel, in 2005 in response to a liscence dispute with BitKeeper - a version control system at the time. Linus Torvald created Git in 10 days to provide a free, fast alternative to BitKeeper</p>
+    <p>Git was created by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvald</a>, the creator of the Linux Kernel, in 2005 in response to a liscence dispute with BitKeeper - a version control system at the time. Linus Torvald created Git in 10 days to provide a free, fast alternative to BitKeeper</p>
     <P>On December 21<sup>st</sup>, 2005, Git had its first major release.</P>
     <p>Today(on the day of publishing) the latest version of Git is 2.49.0</p>
 
@@ -44,16 +45,44 @@
     </ol>
 
     <h2>Installing Git</h2>
-    <h3>Requirements</h3>
+    <p>As indicated in the Git documentation, one can download as a package or via another installer. I highly recommend the autommated installation.</p>
+    <p>The instructions are as follows:</p>
     <ol>
-        <li>Stable internet connection</li>
-        <li></li>
+        <li>Visit the official website: <a href="https://git-scm.com/download/win">Downloading Git for Windows</a></li>
+        <li>Select the standalone installer (If you want to download onto your desktop) or the portable edition (if you want to have the installer in a seperate or external storage)</li>
+        <li>After the installer file has been downloaded, execute it</li>
+        <li>
+            Usually a system permission pop up appears - Allow it, then follow the following step-by-step instructions
+            <ul>
+                <li>1: Information-Public liscence page: Click next for this section - I know I did</li>
+                <li>2: Review selected components: This is based on preference, but ensure all the necessary boxes are checked</li>
+                <li>3: Choosing the default editor used by Git: I preferably leave it as is, because we can configure it later using</li>
+                <li>4: Adjusting name of initial branch: This is yet again about preference, but many teams are migrating to main as the default branch</li>
+                <li>5: Adjusting PATH environment: I'd leave it as default, but take note of it, as we will probably need it for troubleshooting purposes</li>
+                <li>6: Choosing SSH executable: I went with the Bundled Open SSH, but I've come to learn that if one needs specific features, has existing setup, needs troubleshooting, then External OpenSSH comes in clutch</li>
+                <li>7: Choosing HTTPS transport backend: I'd leave as is</li>
+                <li>8: Configuring line ending conversions: I'd leave as is</li>
+                <li>9: Configuring the terminal emulator to use with Git Bash: I'd leave as is</li>
+                <li>10: Choosing default behavior of git pull: I'd leave as is by default</li>
+                <li>11: Choosing a credential helper: I'd leave as is</li>
+                <li>12: Configuring extra options, these are cache options: Decide as you may prefer</li>
+                <li>13: Installation: Lastly click on the 'Install' button</li>
+            </ul>
+        </li>
+        <li>I learnt that you can also just run this <mark><b>'sudo dnf install git-all'</b></mark> command in the command prompt(As Administrator)</li>
     </ol>
+    
     <h3>Installation</h3>
     <h3>Verifying Installation</h3>
-    
+    <p>After installation, it is important to check if you now have git in your system</p>
+    <p>This is by running <mark><b>git --version</b></mark> or <mark><b>git version</b></mark> or <mark><b>git -v</b></mark> in the terminal</p>
+    <p>This should let you know if you have git appropriately installed</p>
+
     <h2>Configuring Git</h2>
+    <p>I wil briefely talk about basic configurations, but for detailed information you can visit <a href="https://git-scm.com/docs/git-config">git</a></p>
+    <p>A list of all the available cofiguration variables can easily be accessed using the <mark><b>git help --config</b></mark></p>
     <h3>Setting username and email</h3>
+
     <h3>Customizing Default text editor</h3>
     
     <h2>Initializing a Git Repository</h2>
