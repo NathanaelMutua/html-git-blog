@@ -1,350 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/icons/tutoring-logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icons/tutoring-logo.png" />
     <title>Git Basics 101</title>
-</head>
-<body>
+  </head>
+  <body>
     <a href="https://git-scm.com/">
-        <img src="./assets/icons/git-logo.png" alt="Git-Logo" width="80px">
+      <img src="./assets/icons/git-logo.png" alt="Git-Logo" width="80px" />
     </a>
     <h1>Git Tutorial Blog</h1>
-    
+
     <!-- I recently saw the 'hr' tag and wanted to try it out -->
-    <hr>
+    <hr />
     <em>By Nash</em>
-    <hr>
+    <hr />
 
     <p>Dive in with me, let's undertand the basics of Git.</p>
-    <p>This webpage contains what we learnt in our Teach2Give Git training session, and research I have come to aquire. Enjoy!</p>
+    <p>
+      This webpage contains what we learnt in our Teach2Give Git training
+      session, and research I have come to aquire. Enjoy!
+    </p>
 
     <h2>1. Getting started</h2>
-    <p>First let's create a folder, this is where your project or file to be <i>versioned</i> will live, like the way we did for the <a href="https://github.com/codeme254/programming-quotes">programming jokes repository</a></p>
+    <p>
+      First let's create a folder, this is where your project or file to be
+      <i>versioned</i> will live, like the way we did for the
+      <a href="https://github.com/codeme254/programming-quotes"
+        >programming jokes repository</a
+      >
+    </p>
     <p>Next we will need to open the command prompt in the particular file</p>
 
     <h2>2. What is Git</h2>
-    <p>Git is the most popular <i>version control system</i>, it really helps us keep track of different versions of a given project or document.</p>
-    
+    <p>
+      Git is the most popular <i>version control system</i>, it really helps us
+      keep track of different versions of a given project or document.
+    </p>
+
     <h3>Introduction to Version Control</h3>
-    <p>Version control, as it says itself is all about keeping track of versions - That's prolly how I'd put it in laymans terms.</p>
-    <p>Version control systems, which I found out are sometimes called source code management(SCM) or revision control systems(RCS)</p>
-    <p>Version control allows many members to work collaboratively on a project, even of they are not in the same place.</p>
+    <p>
+      Version control, as it says itself is all about keeping track of versions
+      - That's prolly how I'd put it in laymans terms.
+    </p>
+    <p>
+      Version control systems, which I found out are sometimes called source
+      code management(SCM) or revision control systems(RCS)
+    </p>
+    <p>
+      Version control allows many members to work collaboratively on a project,
+      even of they are not in the same place.
+    </p>
 
     <h4>Versioning</h4>
-    <p>As I've come to learn versioning is the creation and management of multiple product releases</p>
+    <p>
+      As I've come to learn versioning is the creation and management of
+      multiple product releases
+    </p>
     <p>This is signified through versioning numbers, such as: v2.2.1</p>
     <strong>Meaning of each digit</strong>
     <ul>
-        <li>"v<b>2.</b>.2.1": This is a MAJOR change in a version</li>
-        <li>"v2.<b>2</b>.1": This usually represents a patch release, usually having minor features.</li>
-        <li>"v2.2.<b>1</b>": This represents a patch release, it is usually just basic bug fixes</li>
+      <li>"v<b>2.</b>.2.1": This is a MAJOR change in a version</li>
+      <li>
+        "v2.<b>2</b>.1": This usually represents a patch release, usually having
+        minor features.
+      </li>
+      <li>
+        "v2.2.<b>1</b>": This represents a patch release, it is usually just
+        basic bug fixes
+      </li>
     </ul>
 
     <h3>History</h3>
-    <p>Git was created by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvald</a>, the creator of the Linux Kernel, in 2005 in response to a liscence dispute with BitKeeper - a version control system at the time. Linus Torvald created Git in 10 days to provide a free, fast alternative to BitKeeper</p>
-    <P>On December 21<sup>st</sup>, 2005, Git had its first major release.</P>
+    <p>
+      Git was created by
+      <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvald</a>,
+      the creator of the Linux Kernel, in 2005 in response to a liscence dispute
+      with BitKeeper - a version control system at the time. Linus Torvald
+      created Git in 10 days to provide a free, fast alternative to BitKeeper
+    </p>
+    <p>On December 21<sup>st</sup>, 2005, Git had its first major release.</p>
     <p>Today(on the day of publishing), the latest version of Git is 2.49.0</p>
 
     <h3>Why Use Git</h3>
     <ol>
-        <li>Helps us keep <i>track of changes</i> made by different members</li>
-        <li>Tracking of changes makes <i>going back to a stable version</i> easier.</li>
-        <li>It ensures <i>better communication</i> and organization</li>
-        <li>Allows for many members to work on the same project - <i>collaboration</i>.</li>
-        <li>Branching and merging allows people to create seperate branches, which they <i>can work on seperately</i>, before requesting to be merged to the main branch - combine changes.</li>
+      <li>Helps us keep <i>track of changes</i> made by different members</li>
+      <li>
+        Tracking of changes makes <i>going back to a stable version</i> easier.
+      </li>
+      <li>It ensures <i>better communication</i> and organization</li>
+      <li>
+        Allows for many members to work on the same project -
+        <i>collaboration</i>.
+      </li>
+      <li>
+        Branching and merging allows people to create seperate branches, which
+        they <i>can work on seperately</i>, before requesting to be merged to
+        the main branch - combine changes.
+      </li>
     </ol>
 
     <h2>3. Installing Git</h2>
     <!-- Here I kinda had to visit the official site to cross-reference -->
     <!-- This is where I got additional information -->
-    <p>As indicated in the Git documentation, one can download as a package or via another installer. I highly recommend the autommated installation.</p>
+    <p>
+      As indicated in the Git documentation, one can download as a package or
+      via another installer. I highly recommend the autommated installation.
+    </p>
     <figure>
-        <img src="./assets/images/git-download-webpage.png" alt="git-download-webpage" width="400px">
-        <figcaption>Git Download Webpage</figcaption>
+      <img
+        src="./assets/images/git-download-webpage.png"
+        alt="git-download-webpage"
+        width="400px"
+      />
+      <figcaption>Git Download Webpage</figcaption>
     </figure>
 
     <h3>Installation</h3>
     <p>The instructions are as follows:</p>
     <ol>
-        <li>Visit the official website: <a href="https://git-scm.com/download/win">Downloading Git for Windows</a></li>
-        <li>Select the standalone installer (If you want to download onto your desktop) or the portable edition (if you want to have the installer in a seperate or external storage)</li>
-        <li>After the installer file has been downloaded, execute it</li>
-        <li>
-            Usually a system permission pop up appears - Allow it, then follow the following step-by-step instructions
-            <ol>
-                <li><b>Information-Public liscence page:</b> Click next for this section - I know I did</li>
-                <figure>
-                    <img src="./assets/images/git-setup-information-confirmation.png" alt="git-setup-information-confirmation" width="400px">
-                    <figcaption>Setup for Information/Public liscence</figcaption>
-                </figure>
-                <li>Review selected components: This is based on preference, but ensure all the necessary boxes are checked</li>
-                <figure>
-                    <img src="./assets/images/git-setup-selecting-components.png" alt="git-setup-selecting-components" width="400px">
-                    <figcaption>Reviewing Selected Elements</figcaption>
-                </figure>
-                <li><b>Choosing the default editor used by Git:</b> I preferably leave it as is, because we can configure it later using</li>
-                <figure>
-                    <img src="./assets/images/git-setup-choosing-an-editor.png" alt="git-setup-choosing-an-editor" width="400px">
-                    <figcaption>Selecting a default editor</figcaption>
-                </figure>
-                <li><b>Adjusting name of initial branch:</b> This is yet again about preference, but many teams are migrating to main as the default branch</li>
-                <figure>
-                    <img src="./assets/images/git-setup-adjusting-name-of-official-branch.png" alt="git-setup-adjusting-name-of-official-branch" width="400px">
-                    <figcaption>Adjusting Name of Default Branch</figcaption>
-                </figure>
-                <li><b>Adjusting PATH environment:</b> I'd leave it as default, but take note of it, as we will probably need it for troubleshooting purposes</li>
-                <figure>
-                    <img src="./assets/images/git-setup-adjusting-path-environment.png" alt="git-setup-adjusting-path-environment" width="400px">
-                    <figcaption>Adjusting PATH environment</figcaption>
-                </figure>
-                <li><b>Choosing SSH executable:</b> I went with the Bundled Open SSH, but I've come to learn that if one needs specific features, has existing setup, needs troubleshooting, then External OpenSSH comes in clutch</li>
-                <figure>
-                    <img src="./assets/images/git-setup-choosing-ssh.png" alt="git-setup-choosing-ssh" width="400px">
-                    <figcaption>Choosing SSH executable</figcaption>
-                </figure>
-                <li><b>Choosing HTTPS transport backend:</b> I'd leave as is</li>
-                <figure>
-                    <img src="./assets/images/git-setup-choosing-https-transport-backend.png" alt="git-setup-choosing-https-transport-backend" width="400px">
-                    <figcaption>Choosing HTTPS Transport</figcaption>
-                </figure>
-                <li><b>Configuring line ending conversions:</b> I'd leave as is</li>
-                <figure>
-                    <img src="./assets/images/git-setup-configuring-line-endings.png" alt="git-setup-configuring-line-endings" width="400px">
-                    <figcaption>Configuring Line Endings</figcaption>
-                </figure>
-                <li><b>Configuring the terminal emulator to use with Git Bash:</b> I'd leave as is</li>
-                <figure>
-                    <img src="./assets/images/git-setup-configuring-terminal-emulator.png" alt="git-setup-configuring-terminal-emulator" width="400px">
-                    <figcaption>Configuring Terminal Emulator</figcaption>
-                </figure>
-                <li><b>Choosing default behavior of git pull:</b> I'd leave as is by default</li>
-                <figure>
-                    <img src="./assets/images/git-setup-choosing-behaviour-of-gitpull.png" alt="git-setup-choosing-behaviour-of-gitpull" width="400px">
-                    <figcaption>Choosing git pull behaviour</figcaption>
-                </figure>
-                <li><b>Choosing a credential helper:</b> I'd leave as is</li>
-                <figure>
-                    <img src="./assets/images/git-setup-choosing-credential-helper.png" alt="git-setup-choosing-credential-helper" width="400px">
-                    <figcaption>Choosing Credential Helper</figcaption>
-                </figure>
-                <li><b>Configuring extra options</b>, these are cache options: Decide as you may prefer</li>
-                <figure>
-                    <img src="./assets/images/git-setup-configuring-extra-options.png" alt="git-setup-configuring-extra-options" width="400px">
-                    <figcaption>Configuring Extra Options</figcaption>
-                </figure>
-                <li>Installation: Lastly click on the 'Install' button</li>
-            </ol>
-        </li>
-        <li>I learnt that you can also just run this <mark><b>'sudo dnf install git-all'</b></mark> command in the command prompt(As Administrator)</li>
+      <li>
+        Visit the official website:
+        <a href="https://git-scm.com/download/win"
+          >Downloading Git for Windows</a
+        >
+      </li>
+      <li>
+        Select the standalone installer (If you want to download onto your
+        desktop) or the portable edition (if you want to have the installer in a
+        seperate or external storage)
+      </li>
+      <li>After the installer file has been downloaded, execute it</li>
+      <li>
+        Usually a system permission pop up appears - Allow it, then follow the
+        following step-by-step instructions
+        <ol>
+          <li>
+            <b>Information-Public liscence page:</b> Click next for this section
+            - I know I did
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-information-confirmation.png"
+              alt="git-setup-information-confirmation"
+              width="400px"
+            />
+            <figcaption>Setup for Information/Public liscence</figcaption>
+          </figure>
+          <li>
+            Review selected components: This is based on preference, but ensure
+            all the necessary boxes are checked
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-selecting-components.png"
+              alt="git-setup-selecting-components"
+              width="400px"
+            />
+            <figcaption>Reviewing Selected Elements</figcaption>
+          </figure>
+          <li>
+            <b>Choosing the default editor used by Git:</b> I preferably leave
+            it as is, because we can configure it later using
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-choosing-an-editor.png"
+              alt="git-setup-choosing-an-editor"
+              width="400px"
+            />
+            <figcaption>Selecting a default editor</figcaption>
+          </figure>
+          <li>
+            <b>Adjusting name of initial branch:</b> This is yet again about
+            preference, but many teams are migrating to main as the default
+            branch
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-adjusting-name-of-official-branch.png"
+              alt="git-setup-adjusting-name-of-official-branch"
+              width="400px"
+            />
+            <figcaption>Adjusting Name of Default Branch</figcaption>
+          </figure>
+          <li>
+            <b>Adjusting PATH environment:</b> I'd leave it as default, but take
+            note of it, as we will probably need it for troubleshooting purposes
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-adjusting-path-environment.png"
+              alt="git-setup-adjusting-path-environment"
+              width="400px"
+            />
+            <figcaption>Adjusting PATH environment</figcaption>
+          </figure>
+          <li>
+            <b>Choosing SSH executable:</b> I went with the Bundled Open SSH,
+            but I've come to learn that if one needs specific features, has
+            existing setup, needs troubleshooting, then External OpenSSH comes
+            in clutch
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-choosing-ssh.png"
+              alt="git-setup-choosing-ssh"
+              width="400px"
+            />
+            <figcaption>Choosing SSH executable</figcaption>
+          </figure>
+          <li><b>Choosing HTTPS transport backend:</b> I'd leave as is</li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-choosing-https-transport-backend.png"
+              alt="git-setup-choosing-https-transport-backend"
+              width="400px"
+            />
+            <figcaption>Choosing HTTPS Transport</figcaption>
+          </figure>
+          <li><b>Configuring line ending conversions:</b> I'd leave as is</li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-configuring-line-endings.png"
+              alt="git-setup-configuring-line-endings"
+              width="400px"
+            />
+            <figcaption>Configuring Line Endings</figcaption>
+          </figure>
+          <li>
+            <b>Configuring the terminal emulator to use with Git Bash:</b> I'd
+            leave as is
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-configuring-terminal-emulator.png"
+              alt="git-setup-configuring-terminal-emulator"
+              width="400px"
+            />
+            <figcaption>Configuring Terminal Emulator</figcaption>
+          </figure>
+          <li>
+            <b>Choosing default behavior of git pull:</b> I'd leave as is by
+            default
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-choosing-behaviour-of-gitpull.png"
+              alt="git-setup-choosing-behaviour-of-gitpull"
+              width="400px"
+            />
+            <figcaption>Choosing git pull behaviour</figcaption>
+          </figure>
+          <li><b>Choosing a credential helper:</b> I'd leave as is</li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-choosing-credential-helper.png"
+              alt="git-setup-choosing-credential-helper"
+              width="400px"
+            />
+            <figcaption>Choosing Credential Helper</figcaption>
+          </figure>
+          <li>
+            <b>Configuring extra options</b>, these are cache options: Decide as
+            you may prefer
+          </li>
+          <figure>
+            <img
+              src="./assets/images/git-setup-configuring-extra-options.png"
+              alt="git-setup-configuring-extra-options"
+              width="400px"
+            />
+            <figcaption>Configuring Extra Options</figcaption>
+          </figure>
+          <li>Installation: Lastly click on the 'Install' button</li>
+        </ol>
+      </li>
+      <li>
+        I learnt that you can also just run this
+        <mark><b>'sudo dnf install git-all'</b></mark> command in the command
+        prompt(As Administrator)
+      </li>
     </ol>
-    
+
     <h3>Verifying Installation</h3>
-    <p>After installation, it is important to check if you now have git in your system</p>
-    <p>This is by running <mark><b>git --version</b></mark> or <mark><b>git version</b></mark> or <mark><b>git -v</b></mark> in the terminal</p>
+    <p>
+      After installation, it is important to check if you now have git in your
+      system
+    </p>
+    <p>
+      This is by running <mark><b>git --version</b></mark> or
+      <mark><b>git version</b></mark> or <mark><b>git -v</b></mark> in the
+      terminal
+    </p>
     <p>This should let you know if you have git appropriately installed</p>
     <figure>
-        <img src="./assets/images/git-version.png" alt="git-version" width="500px">
-        <figcaption>Runing git version to determine the version of the system</figcaption>
+      <img
+        src="./assets/images/git-version.png"
+        alt="git-version"
+        width="500px"
+      />
+      <figcaption>
+        Runing git version to determine the version of the system
+      </figcaption>
     </figure>
 
     <h2>4. Configuring Git</h2>
-    <p>I wil briefely talk about basic configurations, but for detailed information you can visit <a href="https://git-scm.com/docs/git-config">git</a></p>
-    <p>A list of all the available cofiguration variables can easily be accessed using the <mark><b>git help --config</b></mark></p>
+    <p>
+      I wil briefely talk about basic configurations, but for detailed
+      information you can visit
+      <a href="https://git-scm.com/docs/git-config">git</a>
+    </p>
+    <p>
+      A list of all the available cofiguration variables can easily be accessed
+      using the <mark><b>git help --config</b></mark>
+    </p>
 
     <!-- This part is something I came to find out in my research, learning is 80% outside the classroom -->
     <h3>Configuration Levels</h3>
-    <p>In my google research I discovered that you can configure settings to apply to a specific area selectively, as such listed:</p>
+    <p>
+      In my google research I discovered that you can configure settings to
+      apply to a specific area selectively, as such listed:
+    </p>
     <ul>
-        <li>System-Wide Configuration</li>
-        <li>User-Specific Configuration</li>
-        <li>Repository -Specific Configuration</li>
+      <li>System-Wide Configuration</li>
+      <li>User-Specific Configuration</li>
+      <li>Repository -Specific Configuration</li>
     </ul>
 
     <h4>System-Wide Configuration</h4>
-    <p>These settings, as I have discovered apply to every user on the system</p>
-    <p>Usually declared as follows: <mark><b>git config --system 'key' 'value'</b></mark></p>
+    <p>
+      These settings, as I have discovered apply to every user on the system
+    </p>
+    <p>
+      Usually declared as follows:
+      <mark><b>git config --system 'key' 'value'</b></mark>
+    </p>
 
     <h4>User-Specific Configuration</h4>
-    <p>These settings apply to a single user and are stored in the /.gitconfig file.</p>
+    <p>
+      These settings apply to a single user and are stored in the /.gitconfig
+      file.
+    </p>
     <p>It uses the global flag: <b>--global</b></p>
-    <p>Declared as: <mark><b>git config --global 'key' 'value'</b></mark></p>
+    <p>
+      Declared as: <mark><b>git config --global 'key' 'value'</b></mark>
+    </p>
 
     <h4>Repository -Specific Configuration</h4>
-    <p>These settings apply only to the current repository and are stored in the <b>.git/config</b> file</p>
-    <p>Declared as: <mark><b>git config 'key' 'value'</b></mark></p>
+    <p>
+      These settings apply only to the current repository and are stored in the
+      <b>.git/config</b> file
+    </p>
+    <p>
+      Declared as: <mark><b>git config 'key' 'value'</b></mark>
+    </p>
 
     <h3>Basic Configuration Commands</h3>
     <p>We will be going through the basics, namely:</p>
     <ul>
-        <li>Setting username and email</li>
-        <li>Customizing default text editor</li>
+      <li>Setting username and email</li>
+      <li>Customizing default text editor</li>
     </ul>
 
     <h3>Setting username and email</h3>
-    <p>One usually needs to identify themselves before making any commit, this is usually the author's name and email address</p>
-    <p>To declare that identity for all repositories we use <mark><b>git config --global</b></mark></p>
-    <p>This will store the settings in the user's <b>.gitconfig</b> file </p>
-    
+    <p>
+      One usually needs to identify themselves before making any commit, this is
+      usually the author's name and email address
+    </p>
+    <p>
+      To declare that identity for all repositories we use
+      <mark><b>git config --global</b></mark>
+    </p>
+    <p>This will store the settings in the user's <b>.gitconfig</b> file</p>
+
     <p>We will use the following to configure username and email:</p>
     <ul>
-        <li><mark><b>git config --global user.name "Your Name"</b></mark></li>
-        <figure>
-            <img src="./assets/images/git-config-username.png" alt="git-config-username" width="500px">
-            <figcaption>Configuration of username</figcaption>
-        </figure>
-        <li><mark><b>gi config --global user.email examplemail@mail.com</b></mark></li>
-        <figure>
-            <img src="./assets/images/git-config-email.png" alt="git-config-email" width="500px">
-            <figcaption>Configure Email</figcaption>
-        </figure>
+      <li>
+        <mark><b>git config --global user.name "Your Name"</b></mark>
+      </li>
+      <figure>
+        <img
+          src="./assets/images/git-config-username.png"
+          alt="git-config-username"
+          width="500px"
+        />
+        <figcaption>Configuration of username</figcaption>
+      </figure>
+      <li>
+        <mark><b>gi config --global user.email examplemail@mail.com</b></mark>
+      </li>
+      <figure>
+        <img
+          src="./assets/images/git-config-email.png"
+          alt="git-config-email"
+          width="500px"
+        />
+        <figcaption>Configure Email</figcaption>
+      </figure>
     </ul>
 
     <h3>Customizing Default text editor</h3>
-    <p>Customizing and configuring the prefered text editor, let's us determine what we will use for various tasks such as writting and editing commit messages</p>
+    <p>
+      Customizing and configuring the prefered text editor, let's us determine
+      what we will use for various tasks such as writting and editing commit
+      messages
+    </p>
     <p>Here we will use the command below:</p>
     <ul>
-        <li><mark><b>git config --global core.editor "Name of Editor"</b></mark></li>
+      <li>
+        <mark><b>git config --global core.editor "Name of Editor"</b></mark>
+      </li>
     </ul>
-    <p>For configuring the default editor for a specific repository we use the following command. As seen previously, this usually doesn't have the global flag</p>
+    <p>
+      For configuring the default editor for a specific repository we use the
+      following command. As seen previously, this usually doesn't have the
+      global flag
+    </p>
     <ul>
-        <li><mark><b>git config core.editor "Name of Editor</b></mark></li>
+      <li>
+        <mark><b>git config core.editor "Name of Editor</b></mark>
+      </li>
     </ul>
     <p>The names of editors can be as follows:</p>
     <ul>
-        <li>VS Code: "code --wait"</li>
-        <li>vim: "vim"</li>
-        <!-- I think I saw the vim editor selection in the setup menu -->
-        <li>emac: "emac"...I guess this is a type of editor - Though I have not really heard about it</li>
-        <li>There are the other more common ones, such as notepad</li>
+      <li>VS Code: "code --wait"</li>
+      <li>vim: "vim"</li>
+      <!-- I think I saw the vim editor selection in the setup menu -->
+      <li>
+        emac: "emac"...I guess this is a type of editor - Though I have not
+        really heard about it
+      </li>
+      <li>There are the other more common ones, such as notepad</li>
     </ul>
     <figure>
-        <img src="./assets/images/git-core-editor.png" alt="git-core-editor" width="500px">
-        <figcaption>Core Editor Configuration</figcaption>
+      <img
+        src="./assets/images/git-core-editor.png"
+        alt="git-core-editor"
+        width="500px"
+      />
+      <figcaption>Core Editor Configuration</figcaption>
     </figure>
 
     <h2>5. Initializing a Git Repository</h2>
-    <p>A repository, as we were taught, is a workplace which tracks and manages files within a folder. We can have as many repos as we want on our machine, all with seperate history and content, however, it is important to note that the project should have a single Git repository</p>
+    <p>
+      A repository, as we were taught, is a workplace which tracks and manages
+      files within a folder. We can have as many repos as we want on our
+      machine, all with seperate history and content, however, it is important
+      to note that the project should have a single Git repository
+    </p>
 
     <h3>Using <b>git init</b></h3>
-    <p>To initialize a git repository, we run the following command, in the command prompt with the target file directory open</p>
-    <p>Command: <mark><b>git init</b></mark></p>
-    <p>This command is only done once, this creates the .git file in the target repo</p>
+    <p>
+      To initialize a git repository, we run the following command, in the
+      command prompt with the target file directory open
+    </p>
+    <p>
+      Command: <mark><b>git init</b></mark>
+    </p>
+    <p>
+      This command is only done once, this creates the .git file in the target
+      repo
+    </p>
     <figure>
-        <img src="./assets/images/git-initialization.png" alt="git-initialization" width="500px">
-        <figcaption>Git Initialization</figcaption>
+      <img
+        src="./assets/images/git-initialization.png"
+        alt="git-initialization"
+        width="500px"
+      />
+      <figcaption>Git Initialization</figcaption>
     </figure>
 
     <h3>Understanding .git directory</h3>
-    <p>To confirm whether the project has a git repository or not, we use the <b>git status</b> command. when you run the <b>git status</b> command and get the  message "fata: not a git repository...", it means the project lacks a git repo. You can go ahead and initialize a repo.</p>
-    
+    <p>
+      To confirm whether the project has a git repository or not, we use the
+      <b>git status</b> command. when you run the <b>git status</b> command and
+      get the message "fata: not a git repository...", it means the project
+      lacks a git repo. You can go ahead and initialize a repo.
+    </p>
+
     <h2>6. Adding files to the staging area</h2>
-    <p>This generally means preping modified files for a commit. This allows us to organize our changes into meaningful groups before commiting them</p>
-    <p>Before we add anything to the staging area, our instructor informed us that we must first confirm if there is anything to add using <mark><b>git status</b></mark></p>
+    <p>
+      This generally means preping modified files for a commit. This allows us
+      to organize our changes into meaningful groups before commiting them
+    </p>
+    <p>
+      Before we add anything to the staging area, our instructor informed us
+      that we must first confirm if there is anything to add using
+      <mark><b>git status</b></mark>
+    </p>
     <figure>
-        <img src="./assets/images/git-status.png" alt="git-status" width="500px">
-        <figcaption>Git Status of an active repository</figcaption>
+      <img
+        src="./assets/images/git-status.png"
+        alt="git-status"
+        width="500px"
+      />
+      <figcaption>Git Status of an active repository</figcaption>
     </figure>
 
     <h3>Using <b>git add .</b> command</h3>
     <p>This command stages all the changes.</p>
-    <p>Command: <mark><b>git add .</b></mark></p>
+    <p>
+      Command: <mark><b>git add .</b></mark>
+    </p>
     <figure>
-        <img src="./assets/images/git-add2.png" alt="git-add" width="500px">
-        <figcaption>Git Add .</figcaption>
+      <img src="./assets/images/git-add2.png" alt="git-add" width="500px" />
+      <figcaption>Git Add .</figcaption>
     </figure>
 
     <h3>Adding specific files</h3>
-    <p>To stage specific files, we use the format <b>'git add "file_path"'</b></p>
-    <p>Command: <mark><b>git add file.txt</b></mark></p>
+    <p>
+      To stage specific files, we use the format <b>'git add "file_path"'</b>
+    </p>
+    <p>
+      Command: <mark><b>git add file.txt</b></mark>
+    </p>
 
     <h3>Adding all changes</h3>
-    <p>To stage all files we use <b>git add -a</b>, which stages all changes, modifications and new files</p>
+    <p>
+      To stage all files we use <b>git add -a</b>, which stages all changes,
+      modifications and new files
+    </p>
     <ul>
-        <li>Command: <mark><b>git add -a</b></mark></li>
+      <li>
+        Command: <mark><b>git add -a</b></mark>
+      </li>
     </ul>
 
-    <p>On the other hand, I came to realise that if you only want to stage modified and deleted files only, we can use the <i>-u flag</i></p>
+    <p>
+      On the other hand, I came to realise that if you only want to stage
+      modified and deleted files only, we can use the <i>-u flag</i>
+    </p>
     <ul>
-        <li>Command: <mark><b>git add -u</b></mark></li>
-        <figure>
-            <img src="./assets/images/git-add-u.png" alt="git-add-u">
-            <figcaption>Add only modified files</figcaption>
-        </figure>
+      <li>
+        Command: <mark><b>git add -u</b></mark>
+      </li>
+      <figure>
+        <img src="./assets/images/git-add-u.png" alt="git-add-u" />
+        <figcaption>Add only modified files</figcaption>
+      </figure>
     </ul>
-    
+
     <h2>7. Commiting Changes</h2>
-    <p>This is a really important part, a commit is generally a checkpoint to your project at a particular time</p>
-    <p>we use the <i><b>commit</b></i> function</p>
+    <p>
+      This is a really important part, a commit is generally a checkpoint to
+      your project at a particular time
+    </p>
+    <p>
+      we use the <i><b>commit</b></i> function
+    </p>
 
     <h3>Writing Commit Messages</h3>
-    <p>This involves having a message to accompany the checkpoint, it let;s others know what changes were made and what to expect</p>
+    <p>
+      This involves having a message to accompany the checkpoint, it let;s
+      others know what changes were made and what to expect
+    </p>
     <p>There are 2 ways to make commit messages</p>
     <ul>
-        <li>Direct commit message: this is usually a short message entered in the terminal</li>
-        <li>Detailed text editor commit message: this usually needs too be edited in the selected text editor</li>
+      <li>
+        Direct commit message: this is usually a short message entered in the
+        terminal
+      </li>
+      <li>
+        Detailed text editor commit message: this usually needs too be edited in
+        the selected text editor
+      </li>
     </ul>
     <p>Here are the commands to execute the above respectively:</p>
     <ul>
-        <li>Direct commit message: <mark><b>git commmit -m "Message to be filled here"</b></mark></li>
-        <figure>
-            <img src="./assets/images/commit message inline.png" alt="commit message inline" width="500px">
-            <figcaption>Writing Commit Message in the Terminal</figcaption>
-        </figure>
-        <li>git commit</li>
-        <figure>
-            <img src="./assets/images/git-commit-in-text-editor.png" alt="git-commit-in-text-editor" width="500px">
-            <figcaption>Commit Message in the Editor</figcaption>
-        </figure>
+      <li>
+        Direct commit message:
+        <mark><b>git commmit -m "Message to be filled here"</b></mark>
+      </li>
+      <figure>
+        <img
+          src="./assets/images/commit message inline.png"
+          alt="commit message inline"
+          width="500px"
+        />
+        <figcaption>Writing Commit Message in the Terminal</figcaption>
+      </figure>
+      <li>git commit</li>
+      <figure>
+        <img
+          src="./assets/images/git-commit-in-text-editor.png"
+          alt="git-commit-in-text-editor"
+          width="500px"
+        />
+        <figcaption>Commit Message in the Editor</figcaption>
+      </figure>
     </ul>
 
     <h3>Amending commits</h3>
-    <p>I did some research, and found that this is a way to modify the most recent commit made in the branch</p>
-    <p>We can do so like this: <mark><b>git commit --amend -m "New updated commit message"</b></mark></p>
-    
+    <p>
+      I did some research, and found that this is a way to modify the most
+      recent commit made in the branch
+    </p>
+    <p>
+      We can do so like this:
+      <mark><b>git commit --amend -m "New updated commit message"</b></mark>
+    </p>
+
     <h2>8. Branches</h2>
     <p>Branches are like alternative timelines of a project</p>
 
     <h2>9. Creating a Branch</h2>
-    <p>We can create a branch using the command <mark><b>git branch NEW_BRANCH_NAME</b></mark></p>
+    <p>
+      We can create a branch using the command
+      <mark><b>git branch NEW_BRANCH_NAME</b></mark>
+    </p>
     <figure>
-        <img src="./assets/images/git-branch-creation.png" alt="git-branch-creation" width="500px">
-        <figcaption>Creating a Branch called Imagery</figcaption>
+      <img
+        src="./assets/images/git-branch-creation.png"
+        alt="git-branch-creation"
+        width="500px"
+      />
+      <figcaption>Creating a Branch called Imagery</figcaption>
     </figure>
 
     <h2>10. viewing all branches</h2>
-    <p>To view all branches we carry out the command <mark><b>git branch</b></mark>, this gives a list of all branches, with the active branch being highlighted.</p>
+    <p>
+      To view all branches we carry out the command
+      <mark><b>git branch</b></mark
+      >, this gives a list of all branches, with the active branch being
+      highlighted.
+    </p>
     <figure>
-        <img src="./assets/images/git-view-branches.png" alt="git-view-branches" width="500px">
-        <figcaption>Viewing All Branch</figcaption>
+      <img
+        src="./assets/images/git-view-branches.png"
+        alt="git-view-branches"
+        width="500px"
+      />
+      <figcaption>Viewing All Branch</figcaption>
     </figure>
 
     <h2>11. Switching active branches</h2>
-    <p>To switch between branches we use the command <mark><b>git switch TARGET_BRANCH_NAME</b></mark></p>
+    <p>
+      To switch between branches we use the command
+      <mark><b>git switch TARGET_BRANCH_NAME</b></mark>
+    </p>
     <figure>
-        <img src="./assets/images/git-switch-branch.png" alt="git-switch-branch" width="500px">
-        <figcaption>Switching From one Branch to Another</figcaption>
+      <img
+        src="./assets/images/git-switch-branch.png"
+        alt="git-switch-branch"
+        width="500px"
+      />
+      <figcaption>Switching From one Branch to Another</figcaption>
     </figure>
-    
+
     <h2>12. Merging a branch</h2>
-    <p>to merge a branch we first relocate/switch to the branch to which we want the target branch to be merged to, then we run the following command:</p>
+    <p>
+      to merge a branch we first relocate/switch to the branch to which we want
+      the target branch to be merged to, then we run the following command:
+    </p>
     <ul>
-        <li><mark><b>git merge TARGET_BRANCH_NAME</b></mark></li>
+      <li>
+        <mark><b>git merge TARGET_BRANCH_NAME</b></mark>
+      </li>
     </ul>
     <figure>
-        <img src="./assets/images/git-merge-branch.png" alt="git-merge-branch" width="500px">
-        <figcaption>Merging Imagery branch to Master branch</figcaption>
+      <img
+        src="./assets/images/git-merge-branch.png"
+        alt="git-merge-branch"
+        width="500px"
+      />
+      <figcaption>Merging Imagery branch to Master branch</figcaption>
     </figure>
 
     <h2>13. Deleting a branch</h2>
-    <p>To delete a branch we run the command <mark><b>git -d branch</b></mark></p>
+    <p>
+      To delete a branch we run the command <mark><b>git -d branch</b></mark>
+    </p>
     <figure>
-        <img src="./assets/images/git-delete-branch.png" alt="git-delete-branch" width="500px">
-        <figcaption>Deleting 'addionals' branch</figcaption>
+      <img
+        src="./assets/images/git-delete-branch.png"
+        alt="git-delete-branch"
+        width="500px"
+      />
+      <figcaption>Deleting 'addionals' branch</figcaption>
     </figure>
-    
+
     <h2>13. Next Steps</h2>
-    <p>The next actions to take are to look into Github manipulation and basic actions, and additionally get sterted on a programming language of choice.</p>
-</body>
+    <p>
+      The next actions to take are to look into Github manipulation and basic
+      actions, and additionally get sterted on a programming language of choice.
+    </p>
+  </body>
 </html>
